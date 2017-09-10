@@ -1,18 +1,168 @@
 <html>
+  <head>
   <title>First Website</title>
-  
+  </head>
   <body>
-    
-    <h1>This is my first website on github</h1>
-    
+    <div id="wrapper">
+        <div class="header">
+            <h1>This is my first website on github</h1>
+        </div>
+      
+      
+      
+          <div class="navigation">
+        	<u1>
+            	<li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#subject">Subject</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contuctus">Contuct us</a></li>
+             </u1>
+        </div><!---End navigation--->
+      
+      
+      
+       <div class="container">
+        	<div class="left_sidebar">
+            	<div class="important_link">
+                	<h3>Categories</h3>
+            		<u1>
+            	<li><a href="#women">Women</a>
+                	 <li><a href="#sharee">Sharee</a></li>
+                     <li><a href="#dress">dress</a></li>
+                     <li><a href="#shoes">shoes</a></li>
+                        
+                </li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#gift">Gift Item</a></li>
+                <li><a href="#jewelry">Jewelry</a></li>
+                <li><a href="#flower">Folwer</a></li>
+                <li><a href="#winter">winter</a></li>
+             </u1>
+             </div>
+            </div><!---End Sidebar--->
+            <div class="content">
+               </div><!---End Content--->
+        </div><!---End container--->
+		<div class="footer"><marquee>Copyright &copy; Dict-13</marquee></div>
+         </div>
+      
+      </div>
   </body>
 
   
     <style>
-      body{
-      background-color: black;
-      color: white;
-      }
+     body{
+		background:url(../image/bg.jpg);
+		font-size:14px;
+		font-family:Tahoma, Geneva, sans-serif;
+	}
+#wrapper{
+		margin:0 auto;
+		width:960px;
+		background:#CFC;
+	}
+.header{
+		float:left;
+		width:960px;
+		background-color:#FFF;
+		height:150px;
+		color:#003;
+		border-bottom:0;
+	}
+      .navigation{
+		/*(float:left)*/
+		width:960px;
+		background:#FF3;
+		top:123px;
+	}
+.navigation u1{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+.navigation u1 li{
+		display:inline-block;
+		margin-right:-10px;
+	}
+.navigation u1 li a{
+		font-size:14px;
+		color:#FFF;
+		background:#A4223C;
+		font-weight:bold;
+		text-transform:uppercase;
+		text-decoration:none;
+		padding: 10px 47px;
+		display:block;
+		margin-right:-4px;
+		
+	}
+.navigation u1 li a:hover{
+		color:#000;
+		background-color:#E6E6E6;
+		text-decoration:underline;
+	}
+.navigation u1 li ul{
+	position:absolute;
+	display:none;
+	top:195px;
+	left:670px;
+	margin:0;
+	padding:0;
+	width:200px;
+	visibility:hidden;
+	z-index:9999;
+	height:150;
+	}
+.navigationu1 li ul li{
+	display:block;
+	}
+.navigation u1 li ul li a{
+	background:#EAEAEA;
+	color:#000;
+	padding:10px 15px;
+	width:200px;
+	}
+.navigation u1 li ul li a:hover{
+	background:#B7B7B7;
+	color:#000000;
+	}
+.navigation u1 li:hover ul{
+	display:block;
+	visibility:visible;
+	}
+/* start container*/
+
+
+.container{
+	float:left;
+	width:100%;
+	min-height:800px;
+	background:#FFFFFF;
+	padding-bottom:30px;
+}
+/****************start left_sidebar***************/
+.left_sidebar{
+	float:left;
+	width:220px;
+	padding:0 16px;
+	margin-top:20px 0;
+}
+      .content{
+	float:right;
+	width:660px;
+	padding:20px;
+}
+.footer{
+	top:180px;
+	float:left;
+	width:920px;
+	padding:20px;
+	background:#CCC;
+	color:#666666;
+	top:300px;
+}
   </style>
 
 
